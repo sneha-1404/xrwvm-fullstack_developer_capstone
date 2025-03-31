@@ -29,7 +29,10 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost','https://sneha2221005-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/']
-CSRF_TRUSTED_ORIGINS = ["https://sneha2221005-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://sneha2221005-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai",
+    "https://sneha2221005-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai",  # Add this new origin
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
